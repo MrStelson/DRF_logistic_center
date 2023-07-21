@@ -48,14 +48,14 @@ class StorageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Storage
         fields = "__all__"
-        extra_kwargs = {'id': {'read_only': True}}  # от клиента ожидаем только name
+        # extra_kwargs = {'id': {'read_only': True}}
 
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = "__all__"
-        extra_kwargs = {'id': {'read_only': True}}  # от клиента ожидаем только name
+        # extra_kwargs = {'id': {'read_only': True}}
 
 
 class OrderSerializer(serializers.ModelSerializer):
@@ -63,11 +63,4 @@ class OrderSerializer(serializers.ModelSerializer):
         model = Order
         fields = '__all__'
         extra_kwargs = {'date': {'read_only': True},
-                        'type_order': {'read_only': True}}  # от клиента ожидаем только name
-
-    # storage = serializers.CharField
-    # date =
-    # product =
-    # type_order =
-    # amount_product =
-    ...
+                        'type_order': {'read_only': True}}

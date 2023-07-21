@@ -10,13 +10,6 @@ class BaseMode(models.Model):
     class Meta:
         abstract = True
 
-
-# class TypeUser(BaseMode):
-#     type_user = models.CharField(max_length=128)
-#
-#     def __str__(self):
-#         return f'{self.type_user}'
-
 class ApiUser(AbstractUser):
     type_user = models.CharField(max_length=128)
 

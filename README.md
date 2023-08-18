@@ -49,8 +49,8 @@ python manage.py runserver
 ##### Body:
 ```
 {
-    "username": "consumer", 
-    "password": "123123"
+    "username": "<username>", 
+    "password": "<password>"
 }
 ```
 ---

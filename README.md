@@ -28,7 +28,7 @@ python manage.py runserver
 - get all storage in http://127.0.0.1:8000/storages/
 - get all products in http://127.0.0.1:8000/products/
 - get last five orders in http://127.0.0.1:8000/order/
-- get products in storage http://127.0.0.1:8000/storages/<id>/products
+- get products in storage http://127.0.0.1:8000/storages/id/products
 - get orders in storage http://127.0.0.1:8000/storages/1/orders
 
 ---
